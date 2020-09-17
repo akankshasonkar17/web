@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style type="text/css">
+    	.brand{
+    		background: pink !important;
+    	}
+    	.brand-text{
+    		color: pink !important;
+    	}
+    	form{
+    		max-width: 660px;
+    		margin: 20px auto;
+    		padding: 20px;
+    	}
+    	body {
+  			font-family: "Sofia";
+  			font-size: 20px;
+}
+    </style>
+</head>
+<body class="blue lighten-5">
+	<nav class="blue lighten-5"> 
+		<div class="container">
+			<a href="home.html" class = "brand-logo brand-text" >DISCUSSIONS</a>
+			<ul id="nav-mobile" class="right hide-on-small-and-down">
+				<li><a href="home.html" class="btn brand z-depth-0">About</a></li> 
+				<li><a href="login.html" class="btn brand z-depth-0">Login</a></li> 
+				<li><a href="#" class="btn brand z-depth-0">more pages </a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+	<section class="container grey-text">
+		<h4 class="center">Sign up</h4>
+
+		<form class="white" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
+			<label>Student Name: </label>
+			<input type="text" name="name" value="">
+
+			<label>Student Email: </label>
+			<input type="text" name="email" value="">
+
+			<label>Password </label>
+			<input type="password" name="password" value="">
+
+			<label>Upload a copy of your College ID card</label>
+			<br/>
+			<br/>
+			<input type="file" name="file" size="50" />
+			<br/>
+			<br/>
+			
+
+			<label>Date of Birth: </label>
+  			<input type="text" class="datepickerDOB">
+
+			<label>Briefly INTRODUCE yourself to the community</label>
+			<input type="text" name="intro" value="">
+
+			<label>What are your preference after graduation ? Placement / Higher Studies / Start up / Something else</label>
+			<input type="text" name="career" value="">
+
+			<label>Department: </label>
+			<input type="text" name="dept" value="">
+
+			<label>Year: </label>
+			
+
+					<form action="#">
+    				<p>
+      				<label>
+       				<input name="group1" type="radio" checked />
+        			<span>2nd year</span>
+      				</label>
+    				</p>
+    				<p>
+      				<label>
+        			<input name="group1" type="radio" />
+        			<span>3rd Year</span>
+      				</label>
+    				</p>
+    				<p>
+      				<label>
+        			<input class="with-gap" name="group1" type="radio"  />
+        			<span>4th Year</span>
+      				</label>
+    				</p>
+    				</form>
+
+    
+    		<div class="center">
+				<input type="submit" name="submit" value="submit" class="btn brand z-depth-0 ">
+			</div>
+			<div class="center">
+				<a href="login.html" class="btn brand z-depth-0">Or Login</a> 
+			</div>
+  		</form>
+	</section>
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		const Calender1 = document.querySelector('.datepickerDOB');
+		M.Datepicker.init(Calender1,{
+			format:'dd-mmmm-yyyy',
+			showClearBtn: true,
+		}
+
+
+		);
+	</script>
+	<script type="text/javascript">
+		const Calender2 = document.querySelector('.datepickerCured');
+		M.Datepicker.init(Calender2,{
+			format:'dd-mmmm-yyyy',
+			showClearBtn: true,
+		}
+		);
+	</script>
+</body>
+</html>
